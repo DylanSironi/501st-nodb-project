@@ -1,26 +1,67 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Header from './Components/Header';
+import Recruiter from './Components/Recruiter';
+import Roster from './Components/Roster';
+import axios from 'axios';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      myTroopers: []
+    }
+    this.recruitTroopers = this.recruitTroopers.bind(this);
+  }
+
+  componentDidMount(){
+
+    axios.get('/api/my-troopers')
+    .then(res => {
+      this.setState({myTroopers: res.data})
+    })
+    .catch(err => console.log(err));
+  }
+
+  recruitTroopers(troopers){
+    axios.post('/api/my-troopers', {troopers: troopers})
+    .then(res => {
+      this.setState({myTroopers: res.data})
+    })
+    .catch(err => console.log(err));
+  }
+
+  editName = (id, newName) => {
+    let body = {name: newName};
+
+    axios.put(`/api/my-troopers/${id}`, body)
+    .then(res => {
+      this.setState({myTroopers: res.data})
+    })
+    .catch(err => console.log(err));
+  }
+
+  KIATroopers = (id) => {
+    axios.delete(`/api/my-troopers/${id}`)
+    .then(res => {
+      this.setState({myTroopers: res.data})
+    })
+    .catch(err => console.log(err));
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <Header />
+        <Recruiter 
+          recruitFn={this.recruitTroopers}/>
+        <Roster 
+          myTroopers={this.state.myTroopers}
+          nameFn={this.editName}
+          KIAFn={this.KIATroopers}/>
+      </div>
+    )
+  }
 }
 
 export default App;
