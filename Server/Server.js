@@ -1,6 +1,7 @@
 const express = require('express');
 const holoChartsCtrl = require('./Controllers/HoloChartsCtrl');
 const troopCtrl = require('./Controllers/TroopCtrl');
+// const troopers = require('../ArrayCtrl');
 const app = express();
 app.use(express.json());
 
