@@ -1,4 +1,4 @@
-// const troopers = require('../ArrayCtrl');
+const troopers = require('../ArrayCtrl');
 const myTroopers = [];
 let id = 1;
 

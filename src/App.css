@@ -1,9 +1,21 @@
 .App {
   text-align: center;
+  background-color: rgb(87, 86, 86);
 }
 
 .troop-flex {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+/* .app url{
+  height: 200px;
+  width: 200px;
+} */
+div{
+  background-color: rgb(65, 65, 134);
+  height: 25vh;
+}
+h1{
+  background-color: grey;
 }

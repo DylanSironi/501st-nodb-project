@@ -27,7 +27,7 @@ class Recruiter extends Component {
             <HoloCharts 
                 key={i}
                 troopers={troopers}
-                catchFn={this.props.catchFn}
+                recruitFn={this.props.recruitFn}
                 refreshFn={this.getOpenTroopers}/>
         ))
         return (

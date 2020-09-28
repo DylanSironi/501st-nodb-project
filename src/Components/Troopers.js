@@ -41,7 +41,7 @@ class Troopers extends Component {
                         <button onClick={this.handleToggle}>Edit Name</button>
                     </div>
                 )}
-                <button onClick={() => this.props.KIAFn(this.props.troopers.id)}>Release</button>
+                <button onClick={() => this.props.KIAFn(this.props.troopers.id)}>KIA</button>
             </div>
         )
     }

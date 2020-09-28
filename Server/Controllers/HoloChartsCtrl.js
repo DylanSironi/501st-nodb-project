@@ -1,5 +1,5 @@
 const axios = require('axios');
-// const troopers = require('../ArrayCtrl')
+const troopers = require('../ArrayCtrl')
 
 module.exports = {
     getOpenTroopers: (req, res) => {       
@@ -8,24 +8,24 @@ module.exports = {
         const rand2 = Math.ceil(Math.random() * 27);
         const rand3 = Math.ceil(Math.random() * 27);
 
-        // troopersArray.push(troopers[rand1])
-        // troopersArray.push(troopers[rand2])
-        // troopersArray.push(troopers[rand3])
-        // res.status(200).send(troopersArray)
+        troopersArray.push(troopers[rand1])
+        troopersArray.push(troopers[rand2])
+        troopersArray.push(troopers[rand3])
+        res.status(200).send(troopersArray)
 
-        axios.get(`https://swapi.dev/api/people/${rand1}`)
-        .then(response => {
-            troopersArray.push(response.data);
-            axios.get(`https://swapi.dev/api/people/${rand2}`)
-            .then(response => {
-                troopersArray.push(response.data);
-                axios.get(`https://swapi.dev/api/people/${rand3}`)
-                .then(response => {
-                    troopersArray.push(response.data);
-                    res.status(200).send(troopersArray)
-                })
-            })
-        })
-        .catch(err => console.log(err));
+        // axios.get(`https://swapi.dev/api/people/${rand1}`)
+        // .then(response => {
+        //     troopersArray.push(response.data);
+        //     axios.get(`https://swapi.dev/api/people/${rand2}`)
+        //     .then(response => {
+        //         troopersArray.push(response.data);
+        //         axios.get(`https://swapi.dev/api/people/${rand3}`)
+        //         .then(response => {
+        //             troopersArray.push(response.data);
+        //             res.status(200).send(troopersArray)
+        //         })
+        //     })
+        // })
+        // .catch(err => console.log(err));
     }
 }

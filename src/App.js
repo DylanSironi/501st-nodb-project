@@ -27,10 +27,12 @@ class App extends Component {
     axios.post('/api/my-troopers', {troopers: troopers})
     .then(res => {
       this.setState({myTroopers: res.data})
+      console.log(res.data)
     })
     .catch(err => console.log(err));
+    
   }
-
+  
   editName = (id, newName) => {
     let body = {name: newName};
 

@@ -7,7 +7,7 @@ const Roster = props => {
             key={i}
             troopers={troopers}
             nameFn={props.nameFn}
-            releaseFn={props.KIAFn}/>
+            KIAFn={props.KIAFn}/>
     ))
     return (
         <div>
