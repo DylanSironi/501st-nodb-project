@@ -11,7 +11,7 @@ const Roster = props => {
     ))
     return (
         <div>
-            <h1>Roster</h1>
+            <h1>Your Squad</h1>
             <div className='trooper-flex'>
                 {mappedTroopers}
             </div>
