@@ -1,15 +1,33 @@
 .App {
   text-align: center;
+  color: white;
+  font-family: monospace;
 }
 
 .troop-flex {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 30vw;
+  
 }
 .trooper-flex {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  image-rendering: optimizeSpeed;
+}
+div {
+  background-color: rgb(99, 98, 98);
+}
+h1{
+  background-color: rgb(61, 61, 141);
+  color: white;
+  font-size: xxx-large;
+}
+button{
+  background-color: rgb(56, 56, 117);
+  color: white;
+}
+img{
+  width: 25vw;
 }

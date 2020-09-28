@@ -2,7 +2,7 @@ module.exports = [
     {id: 1, name: 'Rex', rank: 'Captain', soldierRating: 10, url: 'https://i.pinimg.com/originals/38/39/2d/38392d5c37e76bb6afd255e1979dfd85.jpg'},
     {id: 2, name: 'Cody', rank: 'Commander', soldierRating: 9, url:'https://i.pinimg.com/originals/69/85/2e/69852e7b09c64efd44b225b12218e477.jpg'},
     {id: 3, name: 'Fives', rank: 'Arc Trooper', soldierRating: 10, url:'https://i.pinimg.com/originals/e4/19/82/e419823744ed65c51f9c65531aa4027f.jpg'},
-    {id: 4, name: 'Echo', rank: 'Arc Trooper', soldierRating: 9, url: 'https://lh3.googleusercontent.com/proxy/sC0XNcprdUXgcaghwDdnhf7KWuPg9tDm4t46DRalAXSt1H_la_e0i7TZM0fz0f9j-awkqm2MJuUrX4riFcLM3efxicGd1C-2k8IzKUtowBnvBgR8U7md3TmZN_y3J5MpQB5Rq9ImuuvkoqPDm6U-MFypIG-wnPgDGd1CU1S-F4d27iCr5fGNl86d3PbBhJRyltkQMjXOcW0s89VIWWqoye4'},
+    {id: 4, name: 'Echo', rank: 'Arc Trooper', soldierRating: 9, url: 'https://steamuserimages-a.akamaihd.net/ugc/382036806905717633/F1052EA7056DA4ADECA7C236296D9B53C929A2CA/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'},
     {id: 5, name: 'Jesse', rank: 'Arc Trooper', soldierRating: 9, url: 'https://i.pinimg.com/236x/d0/5b/cd/d05bcd452b4430dcebb01c12941eca73.jpg'},
     {id: 6, name: 'Waxer', rank: 'Lieutenant', soldierRating: 7, url: 'https://64.media.tumblr.com/0a7b4e5f71424ee537005bc02b6034d9/tumblr_nzpt1dHq6i1u47lcno1_1280.jpg'},
     {id: 7, name: 'Boil', rank: 'Lieutenant', soldierRating: 7, url: 'https://i.redd.it/er2x17nz99d31.jpg'},
