@@ -37,5 +37,4 @@ class Recruiter extends Component {
         )
     }
 }
-
 export default Recruiter;

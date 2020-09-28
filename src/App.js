@@ -30,7 +30,6 @@ class App extends Component {
       console.log(res.data)
     })
     .catch(err => console.log(err));
-    
   }
   
   editName = (id, newName) => {

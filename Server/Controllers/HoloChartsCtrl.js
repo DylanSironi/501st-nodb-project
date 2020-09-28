@@ -4,9 +4,9 @@ const troopers = require('../ArrayCtrl')
 module.exports = {
     getOpenTroopers: (req, res) => {       
         const troopersArray = [];
-        const rand1 = Math.ceil(Math.random() * 27);
-        const rand2 = Math.ceil(Math.random() * 27);
-        const rand3 = Math.ceil(Math.random() * 27);
+        const rand1 = Math.ceil(Math.random() * troopers.length-1);
+        const rand2 = Math.ceil(Math.random() * troopers.length-1);
+        const rand3 = Math.ceil(Math.random() * troopers.length-1);
 
         troopersArray.push(troopers[rand1])
         troopersArray.push(troopers[rand2])

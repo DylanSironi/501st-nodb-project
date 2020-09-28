@@ -12,7 +12,7 @@ const Roster = props => {
     return (
         <div>
             <h1>Roster</h1>
-            <div className='troop-flex'>
+            <div className='trooper-flex'>
                 {mappedTroopers}
             </div>
         </div>
